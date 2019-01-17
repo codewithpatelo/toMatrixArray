@@ -21,13 +21,33 @@ const convert = require('toMatrixArray');
 [![npm version](https://badge.fury.io/js/recht.svg)](https://badge.fury.io/js/recht)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/dashersw/recht/master/LICENSE) [![Greenkeeper badge](https://badges.greenkeeper.io/patelotech/topsis.svg)](https://greenkeeper.io/)
 
-Simple library extension for csvtojson to parse a csv with an array of matrices into a usable object of mathjs or linear-algebra npm library.
+In areas like computational decision science and operation research it is common to work with collections of matrices. This package aims to provide a parser of csv that contains data from not one but several matrices.
+So this is a simple library extension for csvtojson to parse that csv with an array of matrices into a usable object of mathjs or linear-algebra npm library.
 
 ## Installation
 
 ` npm i toMatrixArray `
 
 ## Example Usage
+
+```javascript
+csv()
+  .fromFile(csvFilePath)
+  .then((jsonObj) => {
+      
+
+console.log(convert.toMatrixArray(jsonObj, 'mathjs')[1]);
+
+
+  });
+```
+
+Returns:
+```javascript
+{ data: [ [ 1, 3, 0.33 ], [ 0.33, 1, 0.2 ], [ 3, 5, 1 ] ],
+  rows: 3,
+  cols: 3 }
+```
 
 ```javascript
 csv()
@@ -43,11 +63,11 @@ console.log(convert.toMatrixArray(jsonObj, 'linear-algebra')[1]);
 
 Returns:
 ```javascript
-{ data: [ [ 1, 3, 0.33 ], [ 0.33, 1, 0.2 ], [ 3, 5, 1 ] ],
-  rows: 3,
-  cols: 3 }
+Matrix {
+  _data: [ [ 1, 3, 0.33 ], [ 0.33, 1, 0.2 ], [ 3, 5, 1 ] ],
+  _size: [ 3, 3 ],
+  _datatype: undefined }
 ```
-
 
 
 ## Documentation
