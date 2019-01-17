@@ -4,7 +4,7 @@ const linearAlgebra = require('linear-algebra')();
 const Matrix = linearAlgebra.Matrix; `
 const csv = require('csvtojson');
 	
-const convert = require('toMatrixArray');
+const convert = require('matrixa');
 
 ```
 
@@ -13,7 +13,7 @@ const convert = require('toMatrixArray');
 const math = require('mathjs');
 const csv = require('csvtojson');
 	
-const convert = require('toMatrixArray');
+const convert = require('matrixa');
 
 ```
 

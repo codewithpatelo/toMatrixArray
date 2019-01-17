@@ -1,5 +1,5 @@
 {
-  "name": "toMatrixArray",
+  "name": "matrixa",
   "version": "0.5.0",
   "description": "Extension of csvtojson package to turn results into an array of matrices",
   "main": "index.js",
