@@ -26,7 +26,7 @@ So this is a simple library extension for csvtojson to parse that csv with an ar
 
 ## Installation
 
-` npm i toMatrixArray `
+` npm i matrixa `
 
 ## Example Usage
 
