@@ -77,7 +77,7 @@ Matrix {
 | jsonObj       | **jsonObj** is the json array that contains the data from the csv.                                                                                                                                        | True       | JSON Array              | Each row **MUST** contain the data of a matrix, rows separated by a blank column.                                                                                                                                      | 
 | package       | **package** speficies which package you are using.                                                                                                                                                        | True       | String                  | This argument **MUST** be a string containing 'mathjs' or 'linear-algebra' depending on the package the user wants to use.                                                                                             |
 
-
+![](example.png)
 
 ## Package Dependencies
 
