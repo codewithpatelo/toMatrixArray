@@ -21,8 +21,10 @@ csv()
   .fromFile(csvFilePath)
   .then((jsonObj) => {
       
+console.log(convert.toMatrixArray(jsonObj, 'mathjs'));
 console.log(convert.toMatrixArray(jsonObj, 'mathjs')[1]);
 console.log(convert.toMatrixArray(jsonObj, 'linear-algebra')[1]);
+
 
 describe('Check MathJS', () => {
   it('If m argument is not matrix it should throw error alert.', () => {

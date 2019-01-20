@@ -19,7 +19,7 @@ const ma = [];
 
 
 exports.toMatrixArray = function toMatrixArray(jsonObj, library) {
-  for (let i = 0; i < 2; i += 1) {
+  for (let i = 0; i < jsonObj.length; i += 1) {
     matrix = jsonObj[i];
 
 
